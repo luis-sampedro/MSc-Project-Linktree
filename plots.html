@@ -2,17 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Graphs – MSc Project</title>
+  <title>Plots – MSc Project - Luis Sampedro</title>
   <style>
-    body { font-family:sans-serif; max-width:900px; margin:20px auto; }
-    h1 { color:#005c84; }
-    img { max-width:100%; margin:20px 0; border:1px solid #ccc; border-radius:8px; }
+    body { font-family: Arial, sans-serif; max-width: 1000px; margin: 20px auto; padding: 20px; }
+    h1 { color: #005c84; text-align: center; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+    .caption {
+      text-align: center;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
   <h1>Graphs – MSc Project</h1>
-  <img src="fig5-1.png" alt="Graph 1">
-  <img src="fig5-2.png" alt="Graph 2">
-  <img src="kp.png" alt="Graph 3">
+  <div class="gallery">
+    <div>
+      <img src="kp.png" alt="Graph 1">
+      <div class="caption">Graph 1 – Title</div>
+    </div>
+    <div>
+      <img src="fig5-2.png" alt="Graph 2">
+      <div class="caption">Graph 2 – Title</div>
+    </div>
+    <div>
+      <img src="fig5-1.png" alt="Graph 3">
+      <div class="caption">Graph 3 – Title</div>
+    </div>
+  </div>
 </body>
 </html>
